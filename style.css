@@ -5,7 +5,6 @@ a{
 h1{
   font-size: 40px;
   text-align:center;
-  border-bottom:1px solid gray;
   margin: 0;
   padding:20px;
 }
@@ -30,6 +29,17 @@ iframe {
 }
 #article{
   padding-left: 35px;
+  padding-right: 20px;
+}
+#grid2{
+  display: grid;
+  padding-left: 71px;
+  grid-template-columns: 1fr 70px;
+  border-bottom:1px solid gray;
+}
+#article2{
+  margin: 0;
+  padding-top: 25px;
 }
 @media(max-width:550px) {
   #grid{
@@ -38,8 +48,19 @@ iframe {
   .list{
     border-right: none;
   }
+}
+@media(max-width:650px){
   h1{
-    border-bottom:none;
     font-size: 30px;
   }
+  #grid2{
+    grid-template-columns: 1fr 50px;
+}
+@media(max-width:540px){
+  h1{
+    font-size: 20px;
+  }
+  #grid2{
+    grid-template-columns: 1fr 40px;
+}
 }
